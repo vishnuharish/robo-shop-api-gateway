@@ -1,7 +1,14 @@
+import { ApiProperty } from '@nestjs/swagger';
+
 export class UpdateProduct {
+  @ApiProperty()
   id: string;
+  @ApiProperty()
   name?: string;
+  @ApiProperty()
   description?: string;
-  price?: string;
-  inStock?: string;
+  @ApiProperty()
+  price?: number;
+  @ApiProperty()
+  inStock?: boolean;
 }
